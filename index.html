@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"/>
+	<title>Cafe 'threading' with webworkers demo</title>
+	<script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=all"></script>
+	<script src="jquery-2.1.4.min.js"></script>
+	<script src="node_modules/typescript-collections/collections.js"></script>
+	<script src="app.js"></script>
+	<style>
+		h2 {
+			font-size: 1em;
+		}
+		section#app {
+			position: fixed;
+			left: 40%;
+			top: 40%;
+			border: 1px solid silver;
+			padding: 1em;
+		}
+	</style>
+</head>
+<body>
+
+<section id="app">
+	<button data-order="burger">Burger</button>
+	<button data-order="fries">Fries</button>
+	<button data-order="cola">Cola</button>
+
+	<h2>New Order</h2>
+
+	<div id="order"></div>
+
+	<h2>Queue</h2>
+	<ul id="queue"></ul>
+
+	<h2>Cooking</h2>
+
+	<div id="cooking"></div>
+</section>
+
+</body>
+</html>
